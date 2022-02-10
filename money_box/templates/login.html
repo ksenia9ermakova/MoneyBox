@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+	Страница логина
+{% endblock title %}
+
+
+
+{% block content %}
+<h2>Войти в учетную запись</h2>
+
+<form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Войти" />
+</form>
+<p><a href="{% url 'signup' %}">Нет аккаунта?</a></p>
+{% endblock content %}
+
+

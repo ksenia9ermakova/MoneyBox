@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Детская мобильная копилка
+{% endblock title %}
+
+	
+
+
+{% block content %}
+	<h1>Детская мобильная копилка</h1>
+	<a type="button" class="btn btn-primary btn-lg btn-block" href="{% url 'child_cabinet' %}">Кабинет ребенка</a>
+	<a type="button" class="btn btn-danger btn-lg btn-block" href="{% url 'parent_cabinet' %}" >Кабинет родителя</a>
+{% endblock content %}
