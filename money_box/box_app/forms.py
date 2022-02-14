@@ -17,5 +17,6 @@ class LoginForm(forms.Form):
 
 
 class AddChildForm(forms.Form):
-    name = forms.CharField(label='Никнейм', max_length=30, required=True)
-    birth_day = forms.DateField(label='Дата рождения', widget=forms.DateInput(), required=True)
+    username = forms.CharField(label='Никнейм для ребенка', max_length=30, required=True)
+    name = forms.CharField(label='Имя ребенка', max_length=30, required=True)
+    password = forms.CharField(label='Пароль', widget=forms.PasswordInput(), min_length=6, max_length=20, required=True)

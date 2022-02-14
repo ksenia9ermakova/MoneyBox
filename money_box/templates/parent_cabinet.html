@@ -10,4 +10,8 @@
 
 {% block content %}
 	<h1>Кабинет родителя</h1>
+	<div class="btn-group btn-group-justified">
+		<a href="{% url 'add_child' %}" class="btn btn-primary">Добавить ребенка</a>
+		<a href="#" class="btn btn-primary">Добавить задание</a>
+	</div>
 {% endblock content %}

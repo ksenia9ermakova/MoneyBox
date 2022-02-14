@@ -10,4 +10,11 @@
 
 {% block content %}
 	<h1>Кабинет ребенка</h1>
+	<div class="btn-group btn-group-justified">
+		<a href="{% url 'child_page1' %}" class="btn btn-primary">Тема 1.Кем мне работать, чтобы много зарабатывать?</a>
+		<a href="{% url 'child_page2' %}" class="btn btn-primary">Тема 2. Как работать меньше, а зарабатывать больше</a>
+		<a href="{% url 'child_page3' %}" class="btn btn-primary">Тема 3.Инвестиции</a>
+		<a href="{% url 'child_page4' %}" class="btn btn-primary">Тема 4.Рыночная экономика</a>
+		<a href="{% url 'child_page5' %}" class="btn btn-primary">Тема 5.Как построить бизнес с нуля?</a>
+	</div>
 {% endblock content %}
